@@ -22,3 +22,10 @@ KB 2. Sistem Ekonomi dalam Suatu Negara
 - Mempelajari materi inisiasi
 - Mempelajari sumber eksternal Open Educational Resources (OER) 
 - Mengerjakan diskusi dan latihan 
+
+## Daftar Pustaka/OER
+1. Solihin, Ismail. Edisi-4. Pengantar Bisnis. Tangerang Selatan: Universitas Terbuka 
+2. [Griffin, R.W dan Elbert R.J. 2015. Bussiness Essential. Pearson Education. Inc](https://www.youtube.com/watch?v=Wx01i3EvlaU&t=1s)
+3. [Sistem Ekonomi](https://www.youtube.com/watch?v=Wx01i3EvlaU&t=1s)
+4. [Sistem Ekonomi dan Reformasi Ekonomi](https://www.youtube.com/watch?v=3RTeK9EqhDs)
+5. [Apa Itu Ekonomi? | Memahami Ekonomi dalam 10 Menit](https://www.youtube.com/watch?v=1RDG528VbRE)
