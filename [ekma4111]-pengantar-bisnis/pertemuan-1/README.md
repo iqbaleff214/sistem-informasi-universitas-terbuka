@@ -1,5 +1,7 @@
 # Pengertian Ekonomi dan Sistem Ekonomi
 
+🎥 [Penjelasan tentang Macam-macam Sistem Ekonomi](https://www.youtube.com/watch?v=LpoDsi33wvk)
+
 Ekonomi adalah studi tentang bagaimana sumber daya yang langka digunakan untuk menghasilkan keluaran-barang dan jasa untuk didistribusikan di antara manusia.
 
 Sumber daya dapat mencakup salah satu atau semual hal berikut ini: 
