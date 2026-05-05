@@ -75,16 +75,16 @@ Strategi yang paling sesuai adalah **kombinasi *digital marketing* dan *communit
 
 ### Daftar Referensi
 
-Ariani, D. W. (2023). *Pengantar Bisnis (BMP EKMA4111)*. Tangerang Selatan: Universitas Terbuka.
+Hisrich, R. D., Peters, M. P., & Shepherd, D. A. (2017). *Entrepreneurship* (10th ed.). McGraw-Hill Education.
 
-Hisrich, R. D., Peters, M. P., & Shepherd, D. A. (2017). *Entrepreneurship* (10th ed.). New York: McGraw-Hill Education.
+Kasmir. (2012). *Kewirausahaan*. Rajawali Pers.
 
-Kasmir. (2012). *Kewirausahaan*. Jakarta: Rajawali Pers.
+Kotler, P., & Keller, K. L. (2016). *Marketing Management* (15th ed.). Pearson Education.
 
-Kotler, P., & Keller, K. L. (2016). *Marketing Management* (15th ed.). Harlow: Pearson Education.
+Rangkuti, F. (2017). *Analisis SWOT: Teknik Membedah Kasus Bisnis*. Gramedia Pustaka Utama.
 
-Rangkuti, F. (2017). *Analisis SWOT: Teknik Membedah Kasus Bisnis*. Jakarta: Gramedia Pustaka Utama.
+Ries, E. (2011). *The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses*. Crown Business.
 
-Ries, E. (2011). *The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses*. New York: Crown Business.
+Solihin, I. (2025). *Pengantar Bisnis*. Universitas Terbuka.
 
-Suryana. (2014). *Kewirausahaan: Kiat dan Proses Menuju Sukses* (Edisi 4). Jakarta: Salemba Empat.
+Suryana. (2014). *Kewirausahaan: Kiat dan Proses Menuju Sukses* (Edisi 4). Salemba Empat.
