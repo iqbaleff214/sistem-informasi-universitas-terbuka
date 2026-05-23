@@ -1,81 +1,80 @@
-# 🎓 Sistem Informasi Universitas Terbuka
+# Sistem Informasi — Universitas Terbuka
 
-Repository ini berisi kumpulan rangkuman, catatan, dan materi pembelajaran pribadi selama menempuh program **S1 Sistem Informasi di Universitas Terbuka (UT)**.
-
-Tujuan utama repo ini adalah sebagai dokumentasi pembelajaran sekaligus referensi cepat untuk memahami kembali materi yang telah dipelajari.
-
----
-
-## 📚 Isi Repository
-
-Repository ini mencakup:
-
-* Ringkasan materi per mata kuliah
-* Catatan konsep penting
-* Highlight teori dan praktik
-* Contoh kasus atau implementasi (jika ada)
-* Insight pribadi selama belajar
-
-Struktur umumnya:
-
-```bash
-.
-├── basis-data/
-│   └── README.md
-├── sistem-operasi/
-│   └── README.md
-├── analisis-dan-perancangan-sistem/
-│   └── README.md
-├── pemrograman-web/
-│   └── README.md
-└── README.md
-```
-
----
-
-## 🎯 Tujuan
-
-* Membantu memahami materi kuliah dengan lebih terstruktur
-* Menjadi knowledge base pribadi
-* Mempermudah review saat ujian
-* Berbagi insight dengan orang lain yang mengambil jurusan serupa
-
----
-
-## ⚠️ Catatan
-
-* Semua isi merupakan hasil rangkuman pribadi, bukan materi resmi UT
-* Kemungkinan terdapat kekurangan atau kesalahan dalam penulisan
-* Disarankan tetap merujuk ke sumber resmi untuk pembelajaran utama
-
----
-
-## 🚀 Cara Menggunakan
-
-1. Clone repository ini:
-
-   ```bash
-   git clone https://github.com/iqbaleff214/sistem-informasi-universitas-terbuka.git
-   ```
-
-2. Buka folder sesuai semester atau mata kuliah yang diinginkan
-
-3. Gunakan sebagai referensi belajar atau review
-
----
-
-## 🤝 Kontribusi
-
-Saat ini repository ini bersifat personal, namun terbuka untuk:
-
-* Saran perbaikan
-* Koreksi materi
-* Diskusi terkait topik tertentu
-
-Silakan buat issue jika ingin berdiskusi.
-
----
-
-## 📄 Lisensi
+> Catatan & rangkuman pribadi selama menempuh program **S1 Sistem Informasi** di Universitas Terbuka (UT). Work in progress.
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](LICENSE)
+![Status](https://img.shields.io/badge/status-WIP-yellow)
+
+---
+
+## Mata Kuliah
+
+| Kode | Nama Mata Kuliah | Pertemuan |
+|------|-----------------|-----------|
+| [EMBS4102]([EMBS4102]-pengantar-bisnis/) | Pengantar Bisnis | 4 |
+| [MSIM4310]([MSIM4310]-analisis-dan-visualisasi-data/) | Analisis dan Visualisasi Data | 3 |
+| [STSI4105]([STSI4105]-basis-data/) | Basis Data | 15 |
+| [STSI4202]([STSI4202]-rekayasa-perangkat-lunak/) | Rekayasa Perangkat Lunak | 4 |
+| [STSI4206]([STSI4206]-proses-bisnis/) | Proses Bisnis | 4 |
+| [STSI4207]([STSI4207]-sistem-informasi-manajemen/) | Sistem Informasi Manajemen | 4 |
+| [STSI4402]([STSI4402]-tata-kelola-teknologi-informasi/) | Tata Kelola Teknologi Informasi | 4 |
+
+---
+
+## Struktur
+
+```
+.
+├── [EMBS4102]-pengantar-bisnis/
+├── [MSIM4310]-analisis-dan-visualisasi-data/
+├── [STSI4105]-basis-data/
+├── [STSI4202]-rekayasa-perangkat-lunak/
+├── [STSI4206]-proses-bisnis/
+├── [STSI4207]-sistem-informasi-manajemen/
+└── [STSI4402]-tata-kelola-teknologi-informasi/
+```
+
+Tiap folder mata kuliah berisi subfolder `pertemuan-N/` yang memuat:
+- Rangkuman materi
+- Catatan konsep penting
+- Jawaban diskusi & tugas (jika ada)
+
+---
+
+## Tujuan
+
+- Dokumentasi pembelajaran secara terstruktur
+- Knowledge base pribadi untuk review ujian
+- Referensi bagi mahasiswa UT dengan program studi serupa
+
+---
+
+## Disclaimer
+
+- Isi merupakan catatan pribadi, **bukan materi resmi UT**
+- Kemungkinan ada kekurangan atau kesalahan — selalu rujuk ke sumber resmi
+- Beberapa pertemuan masih kosong atau belum diisi (WIP)
+
+---
+
+## Penggunaan
+
+```bash
+git clone https://github.com/iqbaleff214/sistem-informasi-universitas-terbuka.git
+```
+
+Buka folder mata kuliah yang diinginkan, lalu navigasi ke `pertemuan-N/` yang relevan.
+
+---
+
+## Kontribusi
+
+Repository bersifat personal. Untuk saran perbaikan atau koreksi, silakan buat issue.
+
+---
+
+## Lisensi
+
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](LICENSE)
+
+Konten di repository ini dilisensikan di bawah [Creative Commons Attribution-NonCommercial 4.0 International](LICENSE).
