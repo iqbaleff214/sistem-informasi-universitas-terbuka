@@ -2,23 +2,24 @@
 # TUGAS 3 TUTORIAL ONLINE
 # Aplikasi Visualisasi Data Cuaca Interaktif (Shiny)
 # ============================================================
- 
+
 # Set mirror CRAN supaya bisa dijalankan via Rscript
 options(repos = c(CRAN = "https://cloud.r-project.org"))
- 
+
 # Pasang paket hanya jika belum ada
 pkgs <- c("shiny", "ggplot2", "DT", "readxl")
 for (p in pkgs) {
   if (!requireNamespace(p, quietly = TRUE)) install.packages(p)
 }
- 
+
 library(shiny)
 library(ggplot2)
 library(DT)
 library(readxl)
- 
+
 # ---- Muat data ----
-data <- read_excel("Data_set_Tugas_tutorial_3_STSI_4204.xlsx", na = c("", "NA", "N/A"))
+data <- read_excel("Data_set_Tugas_tutorial_3_STSI_4204.xlsx",
+                na = c("", "NA", "N/A"))
 data <- as.data.frame(data)
 
 # Paksa konversi kolom yang seharusnya numerik
@@ -32,7 +33,7 @@ for (c in num_cols) {
 
 var_numeric <- names(data)[sapply(data, is.numeric)]
 var_all     <- names(data)
- 
+
 # ============================================================
 # UI
 # ============================================================
@@ -45,7 +46,7 @@ ui <- fluidPage(
                               "Line Plot"    = "line",
                               "Bar Plot"     = "bar",
                               "Tabel Data"   = "table")),
- 
+
       # Scatter plot butuh dua variabel numerik (X dan Y)
       conditionalPanel(
         condition = "input.plot_type == 'scatter'",
@@ -54,7 +55,7 @@ ui <- fluidPage(
         selectInput("y_var", "Variabel Y:",
                     choices = var_numeric, selected = "MaxTemp")
       ),
- 
+
       # Line dan bar plot butuh satu variabel
       conditionalPanel(
         condition = "input.plot_type == 'line' || input.plot_type == 'bar'",
@@ -62,7 +63,7 @@ ui <- fluidPage(
                     choices = var_all, selected = "MaxTemp")
       )
     ),
- 
+
     mainPanel(
       conditionalPanel(condition = "input.plot_type != 'table'",
                        plotOutput("plot", height = "500px")),
@@ -71,12 +72,12 @@ ui <- fluidPage(
     )
   )
 )
- 
+
 # ============================================================
 # Server
 # ============================================================
 server <- function(input, output, session) {
- 
+
   output$plot <- renderPlot({
     if (input$plot_type == "scatter") {
       ggplot(data, aes_string(x = input$x_var, y = input$y_var)) +
@@ -84,7 +85,7 @@ server <- function(input, output, session) {
         labs(title = paste(input$y_var, "vs", input$x_var),
              x = input$x_var, y = input$y_var) +
         theme_minimal()
- 
+
     } else if (input$plot_type == "line") {
       df <- data.frame(idx = seq_len(nrow(data)),
                        val = data[[input$var]])
@@ -93,7 +94,7 @@ server <- function(input, output, session) {
         labs(title = paste("Line Plot -", input$var),
              x = "Hari ke-", y = input$var) +
         theme_minimal()
- 
+
     } else if (input$plot_type == "bar") {
       var_data <- data[[input$var]]
       if (is.numeric(var_data)) {
@@ -111,14 +112,14 @@ server <- function(input, output, session) {
       }
     }
   })
- 
+
   output$table <- renderDT({
     datatable(data,
               options = list(scrollX = TRUE, pageLength = 10),
               rownames = FALSE)
   })
 }
- 
+
 # ============================================================
 # Jalankan aplikasi
 # ============================================================
