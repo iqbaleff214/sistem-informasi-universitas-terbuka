@@ -1,0 +1,98 @@
+name: msim4206-praktikum
+
+services:
+  # =====================================================
+  # Kontainer MASTER (peran utama: source replikasi)
+  # Sudah disiapkan dengan auto-increment offset agar
+  # dapat diperluas ke master-master tanpa konflik PK.
+  # =====================================================
+  mariadb-master:
+    image: mariadb:10
+    container_name: mariadb-master
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+    ports:
+      - "3307:3306"
+    networks:
+      - mysql-net
+    command: >
+      --server-id=1
+      --log-bin=mysql-bin
+      --binlog-do-db=rumahsakit
+      --binlog-format=ROW
+      --replicate-do-db=rumahsakit
+      --auto-increment-increment=2
+      --auto-increment-offset=1
+    volumes:
+      - ./rumahsakit.sql:/docker-entrypoint-initdb.d/01-rumahsakit.sql:ro
+      - ./init-master.sql:/docker-entrypoint-initdb.d/02-init-master.sql:ro
+      - master-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  # =====================================================
+  # Kontainer SLAVE (peran utama: penerima replikasi)
+  # Sudah dilengkapi --log-bin sehingga juga siap berperan
+  # sebagai source jika setup-bidirectional.sh dijalankan.
+  # =====================================================
+  mariadb-slave:
+    image: mariadb:10
+    container_name: mariadb-slave
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+    ports:
+      - "3308:3306"
+    networks:
+      - mysql-net
+    command: >
+      --server-id=2
+      --log-bin=mysql-bin
+      --relay-log=relay-bin
+      --binlog-do-db=rumahsakit
+      --binlog-format=ROW
+      --replicate-do-db=rumahsakit
+      --auto-increment-increment=2
+      --auto-increment-offset=2
+    volumes:
+      - ./rumahsakit-schema-only.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - slave-data:/var/lib/mysql
+    depends_on:
+      mariadb-master:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  # =====================================================
+  # phpMyAdmin — antarmuka pengelolaan
+  # =====================================================
+  phpmyadmin:
+    image: phpmyadmin:5.2-apache
+    container_name: phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_ARBITRARY: 1
+      UPLOAD_LIMIT: 64M
+    ports:
+      - "8080:80"
+    networks:
+      - mysql-net
+    depends_on:
+      - mariadb-master
+      - mariadb-slave
+
+networks:
+  mysql-net:
+    name: mysql-net
+    driver: bridge
+
+volumes:
+  master-data:
+  slave-data:
