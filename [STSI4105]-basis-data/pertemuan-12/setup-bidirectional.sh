@@ -12,11 +12,11 @@ echo "    mariadb-slave -> mariadb-master"
 echo
 
 echo "==> Langkah 1: Membuat user replikasi pada mariadb-slave..."
-docker exec mariadb-slave mariadb -uroot -proot -e "
+docker exec -i mariadb-slave mariadb -uroot -proot <<SQL 2>/dev/null
 CREATE USER IF NOT EXISTS 'replica'@'%' IDENTIFIED BY 'replica';
 GRANT REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'replica'@'%';
 FLUSH PRIVILEGES;
-" 2>/dev/null
+SQL
 
 echo "==> Langkah 2: Mengambil MASTER STATUS dari mariadb-slave..."
 SLAVE_AS_MASTER_STATUS=$(docker exec mariadb-slave \
@@ -37,7 +37,7 @@ echo "    Slave log position: $SLAVE_LOG_POS"
 echo
 
 echo "==> Langkah 3: Mengkonfigurasi mariadb-master sebagai slave dari mariadb-slave..."
-docker exec mariadb-master mariadb -uroot -proot <<SQL
+docker exec -i mariadb-master mariadb -uroot -proot <<SQL
 STOP SLAVE;
 RESET SLAVE ALL;
 CHANGE MASTER TO
@@ -54,13 +54,13 @@ sleep 3
 
 echo
 echo "Arah 1 — mariadb-slave sebagai slave dari mariadb-master:"
-docker exec mariadb-slave mariadb -uroot -proot -e "SHOW SLAVE STATUS\\G" 2>/dev/null \
+docker exec mariadb-slave mariadb -uroot -proot -e "SHOW SLAVE STATUS\G" 2>/dev/null \
   | grep -E "Slave_IO_Running:|Slave_SQL_Running:|Last_IO_Error:|Last_SQL_Error:" \
   | head -4
 
 echo
 echo "Arah 2 — mariadb-master sebagai slave dari mariadb-slave:"
-docker exec mariadb-master mariadb -uroot -proot -e "SHOW SLAVE STATUS\\G" 2>/dev/null \
+docker exec mariadb-master mariadb -uroot -proot -e "SHOW SLAVE STATUS\G" 2>/dev/null \
   | grep -E "Slave_IO_Running:|Slave_SQL_Running:|Last_IO_Error:|Last_SQL_Error:" \
   | head -4
 

@@ -26,7 +26,7 @@ echo "    Position: $MASTER_LOG_POS"
 echo
 
 echo "==> Mengkonfigurasi slave (CHANGE MASTER TO + START SLAVE)..."
-docker exec mariadb-slave mariadb -uroot -proot <<SQL
+docker exec -i mariadb-slave mariadb -uroot -proot <<SQL
 STOP SLAVE;
 RESET SLAVE ALL;
 CHANGE MASTER TO
@@ -40,7 +40,7 @@ SQL
 
 echo "==> Selesai. Memeriksa status slave..."
 sleep 2
-docker exec mariadb-slave mariadb -uroot -proot -e "SHOW SLAVE STATUS\\G" \
+docker exec mariadb-slave mariadb -uroot -proot -e "SHOW SLAVE STATUS\G" \
   | grep -E "Slave_IO_Running|Slave_SQL_Running|Last_IO_Error|Last_SQL_Error"
 
 echo
