@@ -10,7 +10,7 @@
 | **Nama Penelaah** | Eka Julianti, S.Kom., MMSI. |
 | **Tahun Pengembangan** | 2024 |
 
-> Dokumen ini disusun berdasarkan **Rancangan Aktivitas Tutorial (RAT)** ([rat.pdf](rat.pdf)) dan **Satuan Acara Tutorial (SAT)** ([sat.pdf](sat.pdf)) mata kuliah sebagai gambaran umum/preview materi yang dibahas di setiap pertemuan tutorial.
+> Dokumen ini disusun berdasarkan **Rancangan Aktivitas Tutorial (RAT)** dan **Satuan Acara Tutorial (SAT)** mata kuliah sebagai gambaran umum/preview materi yang dibahas di setiap pertemuan tutorial.
 
 ---
 
