@@ -3,7 +3,7 @@
 **MSIM4310 Analisis dan Visualisasi Data**  
 Program Studi Sistem Informasi — Universitas Terbuka
 
-> Catatan: dokumen ini merupakan ekstraksi sekaligus elaborasi dari dua materi Inisiasi 3 — **(AB03)** Instalasi R dan RStudio, serta **(AB03b)** Praktikum 1: Operasi Dasar dan Visualisasi di R. Setiap langkah disertai penjelasan konteks, contoh kode yang dilengkapi output, dan tips praktis.
+> Catatan: dokumen ini merupakan ekstraksi sekaligus elaborasi dari dua materi Inisiasi 3 — Instalasi R dan RStudio, serta Praktikum 1: Operasi Dasar dan Visualisasi di R. Setiap langkah disertai penjelasan konteks, contoh kode yang dilengkapi output, dan tips praktis.
 
 ---
 

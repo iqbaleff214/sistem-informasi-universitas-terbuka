@@ -5,8 +5,6 @@ Program Studi Sistem Informasi — Universitas Terbuka
 
 > Catatan: dokumen ini merupakan ekstraksi sekaligus elaborasi dari materi *Inisiasi 4* yang membahas **Koefisien Keragaman (CV)** dan **Angka Baku (Z-Score)** — dua alat statistik untuk membandingkan data dari distribusi yang berbeda. Juga dilengkapi dengan **Tugas Tutorial** beserta solusi lengkap menggunakan R.
 
-> ⚠️ **Catatan editorial:** Materi asli (AB04.pdf) mengandung beberapa ketidakkonsistenan nilai dalam soal-soal contoh. Seluruh koreksi telah dicatat dan dijelaskan pada masing-masing bagian.
-
 ---
 
 ## Daftar Isi
