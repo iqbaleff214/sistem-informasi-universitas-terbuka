@@ -12,7 +12,7 @@
 | Kode | Nama Mata Kuliah | Pertemuan |
 |------|-----------------|-----------|
 | [EMBS4102]([EMBS4102]-pengantar-bisnis/) | Pengantar Bisnis | 8 |
-| [MSIM4310]([MSIM4310]-analisis-dan-visualisasi-data/) | Analisis dan Visualisasi Data | 4 |
+| [MSIM4310]([MSIM4310]-analisis-dan-visualisasi-data/) | Analisis dan Visualisasi Data | 15 |
 | [STSI4105]([STSI4105]-basis-data/) | Basis Data | 15 |
 | [STSI4202]([STSI4202]-rekayasa-perangkat-lunak/) | Rekayasa Perangkat Lunak | 8 |
 | [STSI4206]([STSI4206]-proses-bisnis/) | Proses Bisnis | 8 |
