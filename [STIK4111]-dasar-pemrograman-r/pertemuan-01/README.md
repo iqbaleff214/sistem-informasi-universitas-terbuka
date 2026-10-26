@@ -46,24 +46,12 @@ Bahasa R menerapkan aturan *case-sensitive*, yang berarti penamaan variabel deng
 
 | Perintah Operasional | Fungsi dan Signifikansi Akademis |
 | --- | --- |
-| `x <- 5` atau `24 -> x` | **Pembuatan Objek:** Menugaskan nilai numerik atau hasil fungsi ke dalam variabel (*assignment operator*).
-
- |
-| `ls()` | **Penayangan:** Menampilkan daftar seluruh objek atau variabel yang saat ini tersimpan aktif di dalam RAM.
-
- |
-| `ls(pat="^N")` | **Penyaringan Tampilan:** Menampilkan objek spesifik yang namanya berawalan dengan karakter tertentu (misal: "N").
-
- |
-| `ls.str()` | **Inspeksi Struktur:** Menguraikan spesifikasi teknis objek, meliputi tipe data dan rincian nilainya.
-
- |
-| `rm(x)` | **Penghapusan Tunggal:** Menghapus variabel spesifik (`x`) dari memori sistem.
-
- |
-| `rm(list=ls())` | **Pembersihan Massal:** Mengeliminasi seluruh objek yang ada di dalam RAM secara serentak.
-
- |
+| `x <- 5` atau `24 -> x` | **Pembuatan Objek:** Menugaskan nilai numerik atau hasil fungsi ke dalam variabel (*assignment operator*).|
+| `ls()` | **Penayangan:** Menampilkan daftar seluruh objek atau variabel yang saat ini tersimpan aktif di dalam RAM.|
+| `ls(pat="^N")` | **Penyaringan Tampilan:** Menampilkan objek spesifik yang namanya berawalan dengan karakter tertentu (misal: "N").|
+| `ls.str()` | **Inspeksi Struktur:** Menguraikan spesifikasi teknis objek, meliputi tipe data dan rincian nilainya.|
+| `rm(x)` | **Penghapusan Tunggal:** Menghapus variabel spesifik (`x`) dari memori sistem.|
+| `rm(list=ls())` | **Pembersihan Massal:** Mengeliminasi seluruh objek yang ada di dalam RAM secara serentak.|
 
 ## Pencarian Informasi Bantuan (*Help System*)
 
