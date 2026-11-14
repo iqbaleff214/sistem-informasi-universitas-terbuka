@@ -32,14 +32,14 @@ Setiap upaya pengamanan sistem informasi bertumpu pada keseimbangan tiga prinsip
 
 ```mermaid
 mindmap
-  root((<b>CIA Triad<br/>Keamanan Informasi</b>))
-    <b>1. Confidentiality (Kerahasiaan)</b>
+  root((CIA Triad<br/>Keamanan Informasi))
+    1. Confidentiality (Kerahasiaan)
       Menjamin informasi hanya diakses oleh pihak berwenang
       Enkripsi data, kontrol akses, & perjanjian kerahasiaan (NDA)
-    <b>2. Integrity (Integritas)</b>
+    2. Integrity (Integritas)
       Menjaga keutuhan & akurasi data dari modifikasi ilegal
       Hashing, tanda tangan digital, & validasi input
-    <b>3. Availability (Ketersediaan)</b>
+    3. Availability (Ketersediaan)
       Memastikan sistem & data siap diakses saat dibutuhkan
       Redundansi server, backup rutin, & mitigasi DDoS
 ```
