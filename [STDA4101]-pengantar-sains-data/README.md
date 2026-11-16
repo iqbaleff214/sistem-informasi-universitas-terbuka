@@ -72,14 +72,14 @@ Berikut adalah daftar rencana dan indeks navigasi dokumen rangkuman untuk setiap
 
 | Inisiasi Tuton | Aktivitas Belajar (`RPS`) | Modul `BMP` | Pokok Bahasan & Sub-Pokok Bahasan | Target File Catatan Markdown |
 | :---: | :---: | :---: | :--- | :--- |
-| **01** | `1 & 2` | **Modul 1** | **Dasar-Dasar Sains Data:** Beberapa Istilah dalam Sains Data (`KB1`) & Proses Sains Data (`KB2`). | `pertemuan-01/README.md` |
-| **02** | `3 & 4` | **Modul 2** | **Eksplorasi Data:** Jenis Data (`KB1`), Eksplorasi Data (`KB2`), & *Data Preprocessing* (`KB3`). | `pertemuan-02/README.md` |
-| **03** | `5 & 6` | **Modul 3** | **Analisis dan Visualisasi Data:** Analisis Statistik Deskriptif dan Inferensial (`KB1`) & Visualisasi Data (`KB2`). | `pertemuan-03/README.md` |
-| **04** | `7` | **Modul 4** | **Rumusan Masalah dan Kekeliruan Analisis:** Membuat Kalimat Rumusan Masalah (`KB1`) & Memperbaiki Kekeliruan Analisis (`KB2`). | `pertemuan-04/README.md` |
-| **05** | `9` | **Modul 5** | **Uncertainty, Etika dan Estetika Data:** Kekeliruan Analisis Data & Keterbatasan Sains Data (`KB1`), serta *Uncertainty*, Etika & Estetika Data (`KB2`). | `pertemuan-05/README.md` |
-| **06** | `10 & 11` | **Modul 6** | **Konsep Dasar Algoritma Regresi dan Klasifikasi:** Regresi (`KB1`) & Klasifikasi (`KB2`). | `pertemuan-06/README.md` |
-| **07** | `12 & 13` | **Modul 7** | **Prediksi:** *Clustering* (`KB1`) & Jaringan Saraf Tiruan serta Bahasa Alami (`KB2`). | `pertemuan-07/README.md` |
-| **08** | `14 & 15` | **Modul 8 & 9** | **Deep Learning & Kecerdasan Buatan (`AI`):** Jenis & Aplikasi *Deep Learning* (Modul 8) serta Tipe `AI` & Aplikasi Sains Data (`AI`) di Berbagai Bidang (Modul 9). | `pertemuan-08/README.md` |
+| **01** | `1 & 2` | **Modul 1** | **Dasar-Dasar Sains Data:** Beberapa Istilah dalam Sains Data (`KB1`) & Proses Sains Data (`KB2`). | [`pertemuan-01/README.md`](./pertemuan-01/README.md) |
+| **02** | `3 & 4` | **Modul 2** | **Eksplorasi Data:** Jenis Data (`KB1`), Eksplorasi Data (`KB2`), & *Data Preprocessing* (`KB3`). | [`pertemuan-02/README.md`](./pertemuan-02/README.md) |
+| **03** | `5 & 6` | **Modul 3** | **Analisis dan Visualisasi Data:** Analisis Statistik Deskriptif dan Inferensial (`KB1`) & Visualisasi Data (`KB2`). | [`pertemuan-03/README.md`](./pertemuan-03/README.md) |
+| **04** | `7` | **Modul 4** | **Rumusan Masalah dan Kekeliruan Analisis:** Membuat Kalimat Rumusan Masalah (`KB1`) & Memperbaiki Kekeliruan Analisis (`KB2`). | [`pertemuan-04/README.md`](./pertemuan-04/README.md) |
+| **05** | `9` | **Modul 5** | **Uncertainty, Etika dan Estetika Data:** Kekeliruan Analisis Data & Keterbatasan Sains Data (`KB1`), serta *Uncertainty*, Etika & Estetika Data (`KB2`). | [`pertemuan-05/README.md`](./pertemuan-05/README.md) |
+| **06** | `10 & 11` | **Modul 6** | **Konsep Dasar Algoritma Regresi dan Klasifikasi:** Regresi (`KB1`) & Klasifikasi (`KB2`). | [`pertemuan-06/README.md`](./pertemuan-06/README.md) |
+| **07** | `12 & 13` | **Modul 7** | **Prediksi:** *Clustering* (`KB1`) & Jaringan Saraf Tiruan serta Bahasa Alami (`KB2`). | [`pertemuan-07/README.md`](./pertemuan-07/README.md) |
+| **08** | `14 & 15` | **Modul 8 & 9** | **Deep Learning & Kecerdasan Buatan (`AI`):** Jenis & Aplikasi *Deep Learning* (Modul 8) serta Tipe `AI` & Aplikasi Sains Data (`AI`) di Berbagai Bidang (Modul 9). | [`pertemuan-08/README.md`](./pertemuan-08/README.md) |
 
 ---
 
