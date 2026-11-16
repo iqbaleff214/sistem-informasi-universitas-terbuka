@@ -1,4 +1,4 @@
-# Manajemen Risiko dan Audit Sistem Informasi (`STSI4403`) — Ringkasan Materi Kuliah & Panduan Tutorial
+# Manajemen Risiko dan Audit Sistem Informasi (STSI4403)
 
 * **Kode & Nama Mata Kuliah:** `STSI4403` — Manajemen Risiko dan Audit Sistem Informasi (*Information Systems Risk Management and Auditing*)
 * **Program Studi:** Sistem Informasi (Program Sarjana) — Fakultas Sains dan Teknologi, Universitas Terbuka
